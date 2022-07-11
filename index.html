@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Slides Na Unha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="slides.css">
+
+  <style>
+    /* Aqui e para centralizar o slide na tela */
+    html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(4, 21, 36);
+    }
+  </style>
+  
+  </head>
+<body>
+
+<div id="slide">
+  <span id="contadorSlides"></span>
+  <!-- Seletores de avançar e voltar -->
+  <div id="botoes">
+    <div id="voltar" class="btn">
+      <p class="fas fa-chevron-left">&#10094;</p>
+    </div>
+    <div id="avancar" class="btn">
+      <p class="fas fa-chevron-right">&#10095;</p>
+    </div>
+  </div>
+<!-- Galeria de Imagns  -->
+  <div id="item-slide">
+
+    <div id="atual" class="images">
+      <img src="_imagens/01.png" alt="imagme_01">
+      <div class="legenda">
+        <h1>Caucaia 01</h1>
+        <p>Área Privativa/Piscina</p>
+      </div>
+    </div>
+
+    <div class="images">
+      <img src="_imagens/02.png" alt="imagme_02">
+      <div class="legenda">
+        <h1>Caucaia 01</h1>
+        <p>Vista area condominio</p>
+      </div>
+    </div>
+
+    <div class="images">
+      <img src="_imagens/03.png" alt="imagme_03">
+      <div class="legenda">
+        <h1>Caucaia 01</h1>
+        <p>Área de churrasco</p>
+      </div>
+    </div>
+
+    <div class="images">
+      <img src="_imagens/04.png" alt="imagme_04">
+      <div class="legenda">
+        <h1>Caucaia 01</h1>
+        <p>Fachada dos blocos</p>
+      </div>
+    </div>
+
+    <div class="images">
+      <img src="_imagens/05.png" alt="imagme_05">
+      <div class="legenda">
+        <h1>Caucaia 01</h1>
+        <p>Fachada principal</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- Caixa de botões -->
+  <div id="position"></div>
+</div>
+  <script type="text/javascript" src="slides.js"></script>
+</body>
+</html>

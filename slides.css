@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#carrosel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slide {
+    margin: 0;
+    width: 100%; /* Largura da caixa de slide */
+    overflow: hidden;
+    position: relative;
+}
+
+#contadorSlides {
+    font-family: "Arial", sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    opacity: 0.8;
+    font-weight: bold;
+    position: absolute;
+    z-index: 3;
+    top: 2%;
+    left: 1%;
+}
+
+#item-slide {
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 0;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+}
+
+.images img {
+    width: 100%;
+}
+
+.legenda {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    color: white;
+}
+
+.legenda h1 {
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+.legenda p {
+    font-size: 1.5vw;
+    font-weight: lighter;
+}
+
+#botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+}
+.btn {
+    font-size: 4vw;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    margin: 0 4% 0 4%;
+}
+.btn:hover {
+    opacity: 1;
+}
+
+/* Para o sobreposicionamento funcionar o elemento pai tem que ser relativo, e os filhos absolutos*/
+#position {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    bottom: 6%;
+}
+
+#position div {
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.3% 3%;
+    border-radius: 1%;
+}
+
+#position div:not(:Last-child) {
+    margin-right: 5%;
+}
+
+#position div:hover {
+    background: white;
+}
+
+.primeira {
+    transition: all 0.5s;
+}
